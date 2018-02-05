@@ -24,6 +24,8 @@ get_header();
 			
 	<?php get_template_part( 'template-parts/content', 'hero-alt' ) ?>
 
+	<main>
+
 		<!-- ABOUT
 		=============================================================================== -->
 		<section id="about">
