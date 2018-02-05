@@ -11,24 +11,28 @@
 
 ?>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lcrinc' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'lcrinc' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'lcrinc' ), 'lcrinc', '<a href="http://tysonhood.com">Tyson Hood</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
 <?php wp_footer(); ?>
+
+		<!-- FOOTER
+		=============================================================================== -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<p>&copy; 2018 LCR, Inc.</p>
+					</div>
+				</div> <!-- .row -->
+			</div> <!-- .container -->
+		</footer>
+
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="<?php bloginfo( 'template_directory' ); ?>/assets/js/bootstrap.min.js"></script>
+  <script src="<?php bloginfo( 'template_directory' ); ?>/assets/js/main.js"></script>
 
 </body>
 </html>

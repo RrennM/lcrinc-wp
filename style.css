@@ -258,223 +258,14 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-optgroup,
-textarea {
-	color: #404040;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
-}
-
-p {
-	margin-bottom: 1.5em;
-}
-
-dfn, cite, em, i {
-	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
-}
-
-pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
-}
-
-code, kbd, tt, var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
-}
-
-abbr, acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
-}
-
-mark, ins {
-	background: #fff9c0;
-	text-decoration: none;
-}
-
-big {
-	font-size: 125%;
-}
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-html {
-	box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
-}
-
-body {
-	background: #fff;
-	/* Fallback for when there is no custom background color defined. */
-}
-
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
-}
-
-ul, ol {
-	margin: 0 0 1.5em 3em;
-}
-
-ul {
-	list-style: disc;
-}
-
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin: 0 1.5em 1.5em;
-}
-
-img {
-	height: auto;
-	/* Make sure images are scaled correctly. */
-	max-width: 100%;
-	/* Adhere to container width. */
-}
-
-figure {
-	margin: 1em 0;
-	/* Extra wide images within figure tags don't overflow the content area. */
-}
-
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
-}
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-}
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-}
-
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-	border-color: #aaa #bbb #bbb;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
-textarea:focus {
-	color: #111;
-}
-
-select {
-	border: 1px solid #ccc;
-}
-
-textarea {
-	width: 100%;
-}
 
 /*--------------------------------------------------------------
 # Navigation
@@ -482,25 +273,6 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
-}
-
-a:visited {
-	color: purple;
-}
-
-a:hover, a:focus, a:active {
-	color: midnightblue;
-}
-
-a:focus {
-	outline: thin dotted;
-}
-
-a:hover, a:active {
-	outline: 0;
-}
 
 /*--------------------------------------------------------------
 ## Menus
@@ -850,4 +622,617 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+
+/*=============================================================
+/* CUSTOM STYLES - THEME SPECIFIC
+=============================================================*/
+/* === BASE STYLES
+=============================================================*/
+body {
+	color: #222;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+	font-weight: 400;
+}
+
+
+/* === GLOBAL STYLES
+=============================================================*/
+h1, h2, h3, h4, h5, h6 {
+	-webkit-font-smoohing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-family: 'Vollkorn', serif;
+}
+
+h1 {
+	font-size: 3em;
+	margin: 40px 0;
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+p {
+	margin: 0 0 30px;
+}
+
+.row {
+	padding: 20px 0;
+}
+
+.lead {
+	font-size: 1.2em;
+}
+
+.active {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.btn {
+	background-color: #222;
+	border: none;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	color: #fff;
+}
+
+.btn:hover {
+	background-color: #18A218;
+}
+
+
+header.alt-page .navbar.navbar-inverse .navbar-brand {
+	display: block;
+}
+
+.alt-page-default#hero {
+	background: url(./assets/img/trees.jpg) 50% 0 no-repeat fixed;
+	background-size: cover;
+	max-height: 400px;
+}
+
+.alt-page #nav-links li.active a {
+	background-color: rgba(0,0,0,0); 
+}
+
+
+/* === HOME PAGE STYLES
+=============================================================*/
+header {
+	height: auto;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+header #navbar {
+	border: none;
+	position: fixed;
+	min-width: 100%;
+	max-width: 100%;
+	z-index: 10;
+	border-radius: 0;
+}
+
+header .navbar.navbar-inverse {
+	background: rgba(0,0,0,0.8);
+}
+
+header .navbar-inverse .navbar-brand {
+	color: #fff;
+	display: none;
+}
+
+.navbar #nav-links {
+	justify-content: center;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.85);
+	margin: 0;
+	font-size: 1em;
+	display: block;
+	height: auto;
+}
+
+.navbar #nav-links li {
+	border-bottom: 1px solid #777;
+	padding: 5px 0
+}
+
+.navbar #nav-links li:nth-of-type(5) {
+	border-bottom: none;
+}
+
+.navbar-collapse.collapse {
+	padding-bottom: 20px;
+}
+
+
+/* === HERO STYLES
+=============================================================*/
+#hero {
+	background: url(./assets/img/mthood.jpg) 50% 0 no-repeat fixed;
+	background-size: cover;
+	padding: 0;
+	height: 660px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#hero #header-wrap {
+	background: rgba(255,255,255,0.6);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 300px;
+	height: 200px;
+	display: block;
+	vertical-align: middle;
+}
+
+#hero-title {
+	font-size: 72px;
+	margin: 40px 0 0;
+}
+
+
+/* === CONTACT STRIPE STYLES
+=============================================================*/
+#contact-stripe {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#contact-stripe .container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#contact-stripe .container .row {
+	width: 100%;
+	margin: 0;
+	background-color: #213C30;
+	padding: 15px;
+}
+
+#contact-stripe .container .row p {
+	color: #fff;
+	font-size: 1.4em;
+	margin: 0;
+}
+
+#contact-stripe .container .row a {
+	display: block;
+	max-width: 200px;
+	margin: 10px auto;
+}
+
+
+/* === REFILL STYLES
+=============================================================*/
+#refill {
+	width: auto;
+	max-width: 100%;
+}
+
+#refill img {
+	border: 1px solid #213C30;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	margin: 10px auto;
+	max-width: 90%; 
+}
+
+#refill p {
+	font-size: 1.4em;
+	color: #fff;
+	background-color: #213C30;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	padding: 10px;
+	max-width: 90%;
+	margin: 20px auto;
+}
+
+#refill p:first-of-type {
+	margin-top: 10px;
+}
+
+
+
+/* === BIO STYLES
+=============================================================*/
+#bio {
+	padding-bottom: 20px; 
+}
+
+#bio .lead {
+	margin-bottom: 0;
+}
+
+#bio span {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+#bio img {
+	max-width: 180px;
+	margin: 20px 0;
+	width: 100%;
+}
+
+#bio p {
+	margin: 10px 0 0;
+}
+
+
+/* === MORE INFO STYLES
+=============================================================*/
+#moreinfo {
+	background-color: #eeeeee;
+}
+
+#moreinfo .btn {
+	background-color: #567F55;
+	border: none;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+#moreinfo .btn:hover {
+	background-color: #338531;
+}
+
+#moreinfo .col-sm-4 {
+	margin-bottom: 20px;
+}
+
+
+
+/* === FOOTER STYLES
+=============================================================*/
+footer {
+	height: 50px;
+	background: rgba(0,0,0,0.8);
+}
+
+footer .row {
+	margin: 0;
+	padding: 0;
+}
+
+footer p {
+	margin: 0;
+	color: #fff;
+	line-height: 50px;
+	padding: 0;
+}
+
+
+
+/* === ABOUT PAGE STYLES
+=============================================================*/
+#about img {
+	margin-bottom: 20px; 
+	max-width: 140px;
+	width: 100%
+}
+
+#about #flag {
+	float: left;
+}
+
+
+
+/* === WHY PAGE STYLES
+=============================================================*/
+#facts .fact-container {
+	margin: 20px 0; 
+}
+
+#facts h2 {
+	margin-bottom: 20px;
+}
+
+#facts img {
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+#facts p {
+	margin: 40px auto;
+	font-size: 1.4em;
+}
+
+#facts .row {
+	padding-bottom: 0;
+}
+
+#facts .standalone {
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+/* === CONTACT PAGE STYLES
+=============================================================*/
+#contact {
+	padding: 20px;
+}
+
+#contact h2 {
+	margin: 40px auto;
+}
+
+#contact .helpful {
+	font-size: .875em;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+#contact .helpful p,
+#contact .col-sm-4 {
+	margin: 0 0 30px;
+}
+
+#contact p {
+	margin: 0 0 10px;
+}
+
+#contact a {
+	text-decoration: none;
+}
+
+
+/* === ANIMATION STYLES
+=============================================================*/
+/*animation element*/
+
+ .animation-element {
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/*animation element sliding from left*/
+
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-20px, 0px, 0px);
+  -webkit-transform: translate3d(-20px, 0px, 0px);
+  -o-transform: translate(-20px, 0px);
+  -ms-transform: translate(-20px, 0px);
+  transform: translate3d(-20px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+/*animation slide left*/
+
+/*animation element sliding from right*/
+
+.animation-element.slide-right {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(20px, 0px, 0px);
+  -webkit-transform: translate3d(20px, 0px, 0px);
+  -o-transform: translate(20px, 0px);
+  -ms-transform: translate(20px, 0px);
+  transform: translate3d(20px, 0px, 0px);
+}
+
+.animation-element.slide-right.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+/*animation slide right*/
+
+/*animation element sliding up*/
+
+.animation-element.slide-up {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(0px, 40px, 0px);
+  -webkit-transform: translate3d(0px, 40px, 0px);
+  -o-transform: translate(0px, 40px);
+  -ms-transform: translate(0px, 40px);
+  transform: translate3d(0px, 40px, 0px);
+}
+
+.animation-element.slide-up.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+/*animation slide up*/
+
+
+/* === MEDIA QUERIES - Tablet
+=============================================================*/
+@media screen and ( min-width: 768px ) {
+	/*Navbar*/
+	.navbar .container,
+	.navbar-collapse.collapse {
+		height: 80px;
+	}
+
+	.navbar #nav-links {
+		background-color: rgba(0,0,0,0);
+		height: 80px;
+	}
+
+	.navbar #nav-links li {
+		border-bottom: none;
+		height: 80px;
+		padding: 0;
+	}
+
+	.navbar .navbar-brand,
+	.navbar #nav-links a {
+		height: 80px;
+		line-height: 79px;
+		padding: 0 20px;
+		color: #fff;
+	}
+
+	/*Bio*/
+	#bio {
+		padding: 40px 0;
+	}
+
+	#bio h2 {
+		padding-bottom: 20px;
+	}
+
+	#bio img {
+		margin: 0;
+		width: 100%;
+		max-width: 150px;
+	}
+
+	#bio p {
+		display: inline-block;
+		text-align: left;
+	}
+
+	#bio p:first-of-type {
+		margin-top: 20px;
+	}
+
+	#moreinfo .col-sm-4 {
+		border-right: 1px solid #222;
+		height: 100px;
+	}
+
+	#moreinfo .col-sm-4:nth-of-type(3) {
+		border-right: none;
+}
+
+
+/* === MEDIA QUERIES - Desktop
+=============================================================*/
+@media screen and ( min-width: 940px ) {
+
+	#contact-stripe .container .row a {
+		display: inline-block;
+		margin-left: 20px; 
+	}
+
+	#about .row p{
+		text-align: left;
+	}
+
+	#funfacts {
+		margin: 40px auto;
+	}
+
+	.fact-container {
+		float: none;
+	}
+
+	#facts .row {
+		margin: 40px;
+	}
+
+	#facts .fact-container {
+		margin: 40px auto;
+	}
+
+	#facts p {
+		margin: 40px;
+	}
+
+	#facts img {
+		height: 100%;
+		max-height: 300px;
+	}
+
+	#facts #img2 {
+		float: right;
+	}
+
+	/*animation element sliding from left*/
+
+	.animation-element.slide-left {
+	  opacity: 0;
+	  -moz-transition: all 800ms linear;
+	  -webkit-transition: all 800ms linear;
+	  -o-transition: all 800ms linear;
+	  transition: all 800ms linear;
+	  -moz-transform: translate3d(-100px, 0px, 0px);
+	  -webkit-transform: translate3d(-100px, 0px, 0px);
+	  -o-transform: translate(-100px, 0px);
+	  -ms-transform: translate(-100px, 0px);
+	  transform: translate3d(-100px, 0px, 0px);
+	}
+
+	.animation-element.slide-left.in-view {
+	  opacity: 1;
+	  -moz-transform: translate3d(0px, 0px, 0px);
+	  -webkit-transform: translate3d(0px, 0px, 0px);
+	  -o-transform: translate(0px, 0px);
+	  -ms-transform: translate(0px, 0px);
+	  transform: translate3d(0px, 0px, 0px);
+	}
+	/*animation slide from left*/
+
+	/*animation element sliding left*/
+
+	.animation-element.slide-right {
+	  opacity: 0;
+	  -moz-transition: all 800ms linear;
+	  -webkit-transition: all 800ms linear;
+	  -o-transition: all 800ms linear;
+	  transition: all 800ms linear;
+	  -moz-transform: translate3d(100px, 0px, 0px);
+	  -webkit-transform: translate3d(100px, 0px, 0px);
+	  -o-transform: translate(100px, 0px);
+	  -ms-transform: translate(100px, 0px);
+	  transform: translate3d(100px, 0px, 0px);
+	}
+
+	.animation-element.slide-right.in-view {
+	  opacity: 1;
+	  -moz-transform: translate3d(0px, 0px, 0px);
+	  -webkit-transform: translate3d(0px, 0px, 0px);
+	  -o-transform: translate(0px, 0px);
+	  -ms-transform: translate(0px, 0px);
+	  transform: translate3d(0px, 0px, 0px);
+	}
+	/*animation slide left*/
 }
